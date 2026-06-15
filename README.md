@@ -1,20 +1,20 @@
 # Diversion
 
-## Descripción
+## Description
 
-Diversion es un kata de programación centrado en la generación y análisis de secuencias binarias.
+Diversion is a programming kata focused on the generation and analysis of binary sequences.
 
-El objetivo es determinar cuántos números binarios de longitud `n` pueden formarse sin que aparezcan dos bits `1` consecutivos. Para ello, se generan todas las combinaciones posibles, se identifican aquellas que contienen la secuencia `11` y se cuentan únicamente las válidas.
+The goal is to determine how many binary numbers of length `n` can be formed without containing two consecutive `1` bits. To achieve this, all possible combinations are generated, those containing the sequence `11` are identified, and only the valid ones are counted.
 
-Además de implementar la solución, el ejercicio invita a descubrir y justificar matemáticamente el patrón que aparece en los resultados.
+In addition to implementing the solution, the exercise encourages discovering and mathematically justifying the pattern that appears in the results.
 
-## Problema
+## Problem
 
-Dada una longitud `n`, generar todas las secuencias binarias posibles y calcular cuántas cumplen la siguiente condición:
+Given a length `n`, generate all possible binary sequences and calculate how many satisfy the following condition:
 
-- No pueden contener dos `1` adyacentes.
+- They must not contain two adjacent `1`s.
 
-### Ejemplo para n = 3
+### Example for n = 3
 
 ```text
 000
@@ -27,7 +27,7 @@ Dada una longitud `n`, generar todas las secuencias binarias posibles y calcular
 111
 ```
 
-Las secuencias válidas son:
+The valid sequences are:
 
 ```text
 000
@@ -37,45 +37,45 @@ Las secuencias válidas son:
 101
 ```
 
-Resultado:
+Result:
 
 ```text
 5
 ```
 
-## Conceptos trabajados
+## Concepts Covered
 
-- Programación en Java
-- Recursividad
-- Generación de combinaciones
-- Algoritmos de conteo
-- Manipulación de cadenas
-- Resolución de problemas
-- Sucesiones matemáticas
+- Java programming
+- Recursion
+- Combination generation
+- Counting algorithms
+- String manipulation
+- Problem solving
+- Mathematical sequences
 
-## Funcionalidades
+## Features
 
-- Generar todas las combinaciones binarias de longitud `n`.
-- Detectar si una secuencia contiene dos `1` consecutivos.
-- Filtrar las secuencias válidas.
-- Calcular el número total de combinaciones que cumplen la condición.
+- Generate all binary combinations of length `n`.
+- Detect whether a sequence contains two consecutive `1`s.
+- Filter valid sequences.
+- Calculate the total number of combinations that satisfy the condition.
 
-## Ejemplos
+## Examples
 
-### Longitud 1
+### Length 1
 
 ```text
 0
 1
 ```
 
-Secuencias válidas:
+Valid sequences:
 
 ```text
 2
 ```
 
-### Longitud 2
+### Length 2
 
 ```text
 00
@@ -84,13 +84,13 @@ Secuencias válidas:
 11
 ```
 
-Secuencias válidas:
+Valid sequences:
 
 ```text
 3
 ```
 
-### Longitud 3
+### Length 3
 
 ```text
 000
@@ -103,15 +103,15 @@ Secuencias válidas:
 111
 ```
 
-Secuencias válidas:
+Valid sequences:
 
 ```text
 5
 ```
 
-## Observación
+## Observation
 
-Los resultados obtenidos siguen la sucesión de Fibonacci:
+The obtained results follow the Fibonacci sequence:
 
 ```text
 n = 1 → 2
@@ -122,12 +122,12 @@ n = 5 → 13
 ...
 ```
 
-Esto permite calcular eficientemente el resultado para valores grandes de `n` sin necesidad de generar todas las combinaciones posibles.
+This makes it possible to efficiently compute the result for large values of `n` without generating all possible combinations.
 
-## Objetivo
+## Objective
 
-El objetivo principal es practicar la generación de combinaciones, el diseño de algoritmos y la identificación de patrones matemáticos a partir de los resultados obtenidos.
+The main objective is to practice combination generation, algorithm design, and the identification of mathematical patterns from the obtained results.
 
-## Autor
+## Author
 
-Ejercicio realizado como parte de las prácticas de Cyber Dojo utilizando Java.
+Exercise completed as part of Cyber Dojo practice sessions using Java.
